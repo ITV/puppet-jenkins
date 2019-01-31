@@ -5,6 +5,7 @@ After=network.target
 
 [Service]
 Type=simple
+LimitNOFILE=100000
 User=<%= scope['jenkins::slave::slave_user'] %>
 EnvironmentFile=<%= scope['jenkins::params::sysconfdir'] %>/jenkins-slave
 ExecStart=<%= scope['jenkins::slave::slave_home'] %>/jenkins-slave-run
