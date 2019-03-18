@@ -5,6 +5,7 @@ After=network.target
 
 [Service]
 Type=forking
+LimitNOFILE=200000
 User=<%= scope['jenkins::user'] %>
 Group=<%= scope['jenkins::group'] %>
 EnvironmentFile=<%= scope['jenkins::sysconfdir'] %>/jenkins
