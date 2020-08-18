@@ -14,7 +14,7 @@ class jenkins::repo::el
       descr    => 'Jenkins',
       baseurl  => 'https://pkg.jenkins.io/redhat-stable/',
       gpgcheck => 1,
-      gpgkey   => 'https://pkg.jenkins.io/redhat/jenkins-ci.org.key',
+      gpgkey   => 'https://pkg.jenkins.io/redhat/jenkins.io.key',
       enabled  => 1,
       proxy    => $repo_proxy,
     }
@@ -25,7 +25,7 @@ class jenkins::repo::el
       descr    => 'Jenkins',
       baseurl  => 'https://pkg.jenkins.io/redhat/',
       gpgcheck => 1,
-      gpgkey   => 'https://pkg.jenkins.io/redhat/jenkins-ci.org.key',
+      gpgkey   => 'https://pkg.jenkins.io/redhat/jenkins.io.key',
       enabled  => 1,
       proxy    => $repo_proxy,
     }
